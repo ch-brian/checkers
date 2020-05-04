@@ -1,11 +1,8 @@
 import React from 'react';
 
 const Box = (props) => {
-  return (
-    <div>
-      <p>This is the box</p>
-    </div>
-  );
+  const { boxColor } = props;
+  return <div className={boxColor}></div>;
 };
 
 export default Box;

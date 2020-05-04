@@ -1,3 +1,22 @@
 body {
   background-color: skyblue;
 }
+
+.board {
+  .row {
+    height: 100px;
+    .box {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      &--white {
+        @extend .box;
+        background-color: white;
+      }
+      &--black {
+        @extend .box;
+        background-color: black;
+      }
+    }
+  }
+}

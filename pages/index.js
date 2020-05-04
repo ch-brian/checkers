@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
-import Board from './components/Board.jsx';
+import Board from '../components/Board.jsx';
 
 const App = () => {
   const [boardsize, setBoardsize] = useState(8);
@@ -27,7 +27,9 @@ const App = () => {
       <Head>
         <title>Checkerboard</title>
       </Head>
+
       <Board boardsize={boardsize} />
+
       <form id='boardsizeForm' onSubmit={handleBoardsizeChange}>
         <label>Set Boardsize</label> <br />
         <input
