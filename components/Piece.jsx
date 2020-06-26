@@ -3,7 +3,7 @@ import React from 'react';
 const Piece = (props) => {
   const { pieceState, selectedPiece, setSelectedPiece, id } = props;
   const pieceColor = pieceState === 'red' ? 'piece--red' : 'piece--black';
-  console.log('id vs selectedpiece', [id, selectedPiece]);
+  // console.log('id vs selectedpiece', [id, selectedPiece]);
   let piece = renderPiece();
   function renderPiece() {
     if (JSON.stringify(selectedPiece) === JSON.stringify(id)) {

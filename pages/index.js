@@ -7,8 +7,8 @@ const App = () => {
   const [boardsizeInput, setBoardsizeInput] = useState('');
 
   useEffect(() => {
-    console.log(boardsize);
-    console.log(typeof boardsize);
+    // console.log(boardsize);
+    // console.log(typeof boardsize);
   });
 
   function handleBoardsizeChange(e) {

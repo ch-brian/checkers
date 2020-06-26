@@ -7,7 +7,7 @@ const Row = (props) => {
   const boxArray = createBoxes(boardsize);
 
   function createBoxes(boardsize) {
-    console.log('from row.jsx: ', [id, rowState]);
+    // console.log('from row.jsx: ', [id, rowState]);
     const boxArr = [];
     if (id % 2 === 0) {
       for (let i = 0; i < boardsize; i++) {
